@@ -48,5 +48,5 @@ zoom <= "000" after 0 ns,
 position <= "000" after 0 ns,
 "000" after 900000 ns;
 pixel_ready <= '0' after 0 ns,
-'1' after 40 ns when pixel_ready /= '1' else '0' after 40 ns;		--pixel_ready was 480 and 720
+'1' after 40 ns when pixel_ready /= '1' else '0' after 80 ns;		--pixel_ready was 480 and 720
 end behaviour;

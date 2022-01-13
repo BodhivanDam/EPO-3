@@ -35,15 +35,15 @@ end component;
 	signal C0,C1,C2,C3, C4, C5, C6, C7, center_b        : std_logic_vector(11 downto 0);
 	
 begin
-	C0 <= "000000000000";		-- "0"
-	C1 <= "000000000000";		-- "0"
-	C2 <= "000000000000";		-- "0"
-	C3 <= "000000000000";		-- "850"
-	C4 <= "000000000000";		-- "-614"
-	C5 <= "000000000000";		-- "0"
-	C6 <= "000000000000";		-- "0"
-	C7 <= "000000000000";		-- "600"
-	hunderd <= "000001100100";	-- "100"
+	C0 <= "000000000000";
+	C1 <= "000000000000";
+	C2 <= "000000000000";
+	C3 <= "000000000000";
+	C4 <= "000000000000";
+	C5 <= "000000000000";
+	C6 <= "000000000000";
+	C7 <= "000000000000";
+	hunderd <= "000001100100";
 	FAy1: full_adder_3x port map(s_in,hunderd,full_adder_y1);
 	SL4y: shifter_left_4 port map(full_adder_y1,shift_out4yleft);
 	SL2y: shifter_left_2 port map(full_adder_y1,shift_out2yleft);
